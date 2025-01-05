@@ -1,0 +1,113 @@
+
+.welcome {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+}
+
+.welcome__bg {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.4) hue-rotate(-120deg) ;
+}
+
+.welcome__container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcome__wrapper {
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vw;
+}
+
+.welcome__title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    z-index: 4;
+    line-height: 5vw;
+    font-size: 5vw;
+    width: 80%;
+}
+
+.welcome__subtitle {
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.welcome__btn {
+    font-size: 1vw;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 1vw;
+}
+
+.welcome__photo {
+    width: 22.5vw;
+    position: absolute;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+    filter: brightness(0.8);
+    transition: .5s ease;
+}
+
+.welcome__photo:hover {
+    transform: scale(1.1);
+}
+
+.welcome__photo.first {
+    z-index: 2;
+    top: 19vw;
+    right: 20vw;
+}
+
+.welcome__photo.second {
+    z-index: 3;
+    top: 28vw;
+    right: 1vw;
+}
+
+.welcome__photo.third {
+    z-index: 1;
+    top: -4vw;
+    right: 5vw;
+}
+
+@keyframes arrow_anim {
+    0% {
+        transform: translateY(1vw);
+    }
+
+
+    75% {
+        transform: translateY(2vw);
+    }
+
+    100% {
+        transform: translateY(1vw);
+    }
+}
+
+.welcome__arrow {
+    width: 7vw;
+    position: absolute;
+    bottom: 2vw;
+    left: 4vw;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(159deg) brightness(105%) contrast(104%);
+    animation: arrow_anim ease 2s infinite;
+}

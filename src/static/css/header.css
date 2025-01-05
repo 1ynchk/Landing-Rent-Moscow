@@ -1,0 +1,34 @@
+
+.header {
+    font-weight: 100;
+    background-color: black;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 0 6vw;
+}
+
+.header__logo {
+    width: 1vw;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__section {
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__section.logo {
+    width: 8vw;
+}
+
+.header__section.nav {
+    width: 50vw;
+}

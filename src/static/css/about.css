@@ -1,0 +1,48 @@
+
+.about {
+    background-color: white;
+    color: black;
+}
+
+.about__container {
+    padding: 5vw 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__skycraper {
+    width: 40vw;
+}
+
+.about__advantages {
+    width: 100%;
+}
+
+.about__arrow {
+    width: 3vw;
+}
+
+.about__subsection {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.about__box {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 8vw;
+}
+
+.about__advantages_title {
+    font-size: 1.5vw;
+}
+
+.about__header {
+    font-size: 5vw;
+}
