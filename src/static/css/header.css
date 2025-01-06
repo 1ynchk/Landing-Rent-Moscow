@@ -1,7 +1,7 @@
 
 .header {
     font-weight: 100;
-    background-color: black;
+    background-color: rgb(50, 50, 50);
     height: 5vh;
     display: flex;
     align-items: center;
@@ -31,4 +31,23 @@
 
 .header__section.nav {
     width: 50vw;
+}
+
+.header__nav_wrapper {
+    cursor: pointer;
+    height: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__underline {
+    width: 0%;
+    height: .03vw;
+    background-color: white;
+    transition: .2s ease;
+}
+
+.header__nav_wrapper:hover .header__underline {
+    width: 100%;
 }

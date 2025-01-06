@@ -1,6 +1,5 @@
 
 .about {
-    background-color: white;
     color: black;
 }
 
@@ -17,10 +16,29 @@
 
 .about__advantages {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__section {
+    position: relative;
 }
 
 .about__arrow {
     width: 3vw;
+}
+
+.about__arrow.fv_degree {
+    transform: rotate(45deg);
+}
+
+.about__arrow.mfv_degree {
+    transform: rotate(-45deg);
+}
+
+.about__arrow.nt_degree {
+    transform: rotate(-90deg);
 }
 
 .about__subsection {
@@ -41,8 +59,40 @@
 
 .about__advantages_title {
     font-size: 1.5vw;
+    padding-bottom: 1vw;
 }
 
 .about__header {
     font-size: 5vw;
+}
+
+.about__underline {
+    position: absolute;
+    width: 50vw;
+    background-color: rgb(95, 30, 95);
+    height: 0.05vw;
+}
+
+.about__photo_container {
+    position: relative;
+}
+
+.about__vector {
+    position: absolute;
+    width: 40vw;
+    height: 52vw;
+}
+
+.about__vector.vector_1 {
+    background-color: rgb(95, 30, 95);
+    top: -1vw;
+    right: -1vw;
+    z-index: -1;
+}
+
+.about__vector.vector_2 {
+    background-color: rgb(70, 22, 70);
+    top: -2vw;
+    right: -2vw;
+    z-index: -2;
 }

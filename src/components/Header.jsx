@@ -14,9 +14,18 @@ const Header = () => {
                 </div>
 
                 <div className="header__section nav">
-                    <div className='header__nav_btn'>УСЛОВИЯ АРЕНДЫ</div>
-                    <div className='header__nav_btn'>ОФИСЫ НА КАРТЕ</div>
-                    <div className='header__nav_btn'>ДЛЯ СОБСТВЕННИКОВ</div>
+                    <div className='header__nav_wrapper'>
+                        <div className='header__nav_btn'>УСЛОВИЯ АРЕНДЫ</div>
+                        <div className='header__underline'></div>
+                    </div>
+                    <div className='header__nav_wrapper'>
+                        <div className='header__nav_btn'>ОФИСЫ НА КАРТЕ</div>
+                        <div className='header__underline'></div>
+                    </div>
+                    <div className='header__nav_wrapper'>
+                        <div className='header__nav_btn'>ДЛЯ СОБСТВЕННИКОВ</div>
+                        <div className='header__underline'></div>
+                    </div>
                 </div>
             </div>
         </div>

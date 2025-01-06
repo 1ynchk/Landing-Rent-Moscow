@@ -56,6 +56,11 @@
     border: 1px solid white;
     color: white;
     padding: 1vw;
+    transition: .3s ease;
+}
+
+.welcome__btn:hover {
+    transform: scale(1.1);
 }
 
 .welcome__photo {
