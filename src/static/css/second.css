@@ -76,3 +76,115 @@
     outline: 0.1vw solid rgb(95, 30, 95);
     outline-offset: 1.5vw;
 }
+
+@media (max-width: 764px) {
+    .conditions__wrapper {
+        height: fit-content;
+    }
+
+    .conditions__subtitle {
+        top: 20vw;
+        right: 5vw;
+        font-size: 5vw;
+    }
+
+    .condition__section.section_1 {
+        height: 30vw;
+    }
+
+    .condition__section.section_2 {
+        height: 70vw;
+    }
+
+    .conditions__inscription.sect_2 {
+        font-size: 4vw;
+        width: 90%;
+    }
+
+    .condition__section.section_3 {
+        margin-top: 5vw;
+        height: 20vw;
+    }
+
+    .conditions__inscription.sect_3 {
+        top: 13vw;
+        right: 1vw;
+        font-size: 4vw;
+    }
+
+    .conditions__inscription.sect_4 {
+        font-size: 4vw;
+        width: 90%;
+    }
+
+    .conditions__title {
+        font-size: 8vw;
+        width: 90%;
+    }
+    .condition__section.section_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .condition__video {
+        width: 80vw;
+    }
+
+    
+}
+
+@media (max-width: 464px) {
+    .conditions__wrapper {
+        height: fit-content;
+    }
+
+    .conditions__subtitle {
+        top: 35vw;
+        right: 5vw;
+        font-size: 5vw;
+    }
+
+    .condition__section.section_1 {
+        height: 50vw;
+    }
+
+    .condition__section.section_2 {
+        height: 100vw;
+    }
+
+    .conditions__inscription.sect_2 {
+        font-size: 6vw;
+        width: 90%;
+    }
+
+    .condition__section.section_3 {
+        margin-top: 5vw;
+        height: 40vw;
+    }
+
+    .conditions__inscription.sect_3 {
+        top: 31vw;
+        right: 1vw;
+        font-size: 6vw;
+    }
+
+    .conditions__inscription.sect_4 {
+        font-size: 6vw;
+        width: 90%;
+    }
+
+    .conditions__title {
+        font-size: 10vw;
+        width: 90%;
+    }
+    .condition__section.section_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .condition__video {
+        width: 90vw;
+    }
+
+    
+}

@@ -46,6 +46,7 @@
 }
 
 .welcome__subtitle {
+    z-index: 4;
     font-size: 2vw;
     font-weight: 100;
 }
@@ -57,6 +58,7 @@
     color: white;
     padding: 1vw;
     transition: .3s ease;
+    z-index: 4;
 }
 
 .welcome__btn:hover {
@@ -109,10 +111,149 @@
 }
 
 .welcome__arrow {
+    z-index: 5;
     width: 7vw;
     position: absolute;
     bottom: 2vw;
     left: 4vw;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(159deg) brightness(105%) contrast(104%);
     animation: arrow_anim ease 2s infinite;
+}
+
+@media (max-width: 764px) {
+
+    .welcome__btn {
+        font-size: 2vw;
+    }
+
+    
+
+    .welcome__subtitle {
+        font-size: 3vw;
+    }
+
+    .welcome__title {
+        font-size: 6vw;
+    }
+
+    .welcome__photo {
+        width: 25vw;
+    }
+    
+    .welcome__photo.first {
+        z-index: 3;
+        top: 17vw;
+        right: 17vw;
+    }
+    
+    .welcome__photo.second {
+        z-index: 2;
+        top: 24vw;
+        right: 35vw;
+        
+    }
+    
+    .welcome__photo.third {
+        z-index: 1;
+        top: 5vw;
+        right: 0vw;
+    }
+}
+
+@media (max-height: 1025px) {
+
+    .welcome__btn {
+        font-size: 1.2vw;
+    }
+
+    .welcome__container {
+        height: 70%;
+    }
+
+    .welcome__subtitle {
+        font-size: 2vw;
+    }
+
+    .welcome__title {
+        font-size: 5vw;
+    }
+
+    .welcome__photo {
+        width: 20vw;
+    }
+    
+    .welcome__photo.first {
+        z-index: 2;
+        top: 11vw;
+        right: 17vw;
+    }
+    
+    .welcome__photo.second {
+        z-index: 1;
+        top: 19vw;
+        right: 35vw;
+        
+    }
+    
+    .welcome__photo.third {
+        z-index: 3;
+        top: 1vw;
+        right: 0vw;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .welcome__btn {
+        font-size: 3vw;
+    }
+
+    .welcome__container {
+        height: 40%;
+    }
+
+    .welcome__wrapper {
+        text-align: center;
+        align-items: center;
+        height: 40vw;
+    }
+
+    .welcome__subtitle {
+        font-size: 4.5vw;
+    }
+
+    .welcome__title {
+        width: 100%;
+        line-height: 8vw;
+        font-size: 8vw;
+    }
+
+    .welcome__photo {
+        width: 40vw;
+    }
+    
+    .welcome__photo.first {
+        z-index: 3;
+        top: 56vh;
+        right: 5vw;
+    }
+    
+    .welcome__photo.second {
+        z-index: 2;
+        top: 60vh;
+        right: 45vw;
+    }
+    
+    .welcome__photo.third {
+        z-index: 1;
+        top: 34vh;
+        right: 25vw;
+    }
+
+    .welcome__arrow {
+        bottom: 8vw;
+        left: 48%;
+        transform: translateX(-50%);
+    }
 }

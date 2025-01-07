@@ -39,7 +39,7 @@
 .faq__underline {
     margin-top: 0.5vw;
     width: 100%;
-    height: 0.01vw;
+    height: 0.1vh;
     background-color: rgb(50, 50, 50);
 }
 
@@ -65,4 +65,39 @@
 .faq__answer.open {
     max-height: 1000px;
     opacity: 1;
+}
+
+@media (max-width: 764px) {
+    .faq__question_value {
+        font-size: 4vw;
+    }
+    .faq__answer {
+        font-size: 3vw;
+    }
+
+    .faq__question_cross {
+        width: 3vw;
+    }
+
+    .faq__title {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 464px) {
+    .faq__question_value {
+        font-size: 5vw;
+    }
+    .faq__answer {
+        margin-top: 4vw;
+        font-size: 4vw;
+    }
+
+    .faq__question_cross {
+        width: 4vw;
+    }
+
+    .faq__title {
+        font-size: 6vw;
+    }
 }

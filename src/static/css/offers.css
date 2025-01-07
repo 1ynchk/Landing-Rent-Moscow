@@ -59,3 +59,78 @@
     margin-top: 1vw;
     font-size: 2vw;
 }
+
+@media (max-width: 764px) {
+
+    .offers__wrapper {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .offers__title {
+        width: 60vw;
+        font-size: 8vw;
+    }
+
+    .offers__section {
+        width: 80%;
+        height: 33%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offers__photo {
+        width: 12vw;
+    }
+
+    .offers__inscription {
+        width: 60%;
+        text-align: center;
+    }
+
+    .offers__subtitle {
+        text-align: center;
+        width: 45vw;
+        font-size: 4vw;
+        height: fit-content;
+    }
+
+    .offers__inscription {
+        font-size: 2.5vw;
+    }
+
+    .offers__section {
+        height: fit-content;
+        margin-top: 3vw;
+    }
+}
+
+@media (max-width: 464px) {
+
+    .offers__title {
+        width: 70vw;
+        font-size: 10vw;
+    }
+
+    .offers__photo {
+        width: 16vw;
+    }
+
+    .offers__inscription {
+        width: 60%;
+        text-align: center;
+    }
+
+    .offers__subtitle {
+        text-align: center;
+        width: 65vw;
+        font-size: 6vw;
+        height: fit-content;
+    }
+
+    .offers__inscription {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+}

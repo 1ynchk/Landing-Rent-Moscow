@@ -25,7 +25,7 @@ const Galery = () => {
                     nextEl: '.custom-next',
                     prevEl: '.custom-prev',
                   }}
-                spaceBetween={20}
+                spaceBetween={150}
                 slidesPerView={3}
                 loop={true}
                 autoplay={{

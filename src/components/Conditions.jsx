@@ -1,55 +1,91 @@
+import { motion } from 'motion/react'
 
 import video from '../static/videos/video.mp4'
 
+import { 
+    inscriptionsVars, 
+    photosVars,
+    ScaleVars } from './../static/motion/welcome';
+
 const Conditions = () => {
     return (
-        <div className="conditions">
+        <div
+            
+            className="conditions">
             <div className="container">
                 <div className="conditions__container">
 
-                <div className="conditions__wrapper">
+                <motion.div className="conditions__wrapper">
 
                 
-                <div className="condition__section section_1">
-                    <h2 className="conditions__title">
+                <motion.div 
+                    initial='initial'
+                    whileInView='visible'
+                    className="condition__section section_1">
+                    <motion.h2
+                        custom={1}
+                        variants={inscriptionsVars}
+                        className="conditions__title">
                     Найдем помещение в пару кликов
-                    </h2>
+                    </motion.h2>
 
-                    <div className='conditions__subtitle'>
+                    <motion.div 
+                        custom={2}
+                        variants={inscriptionsVars}
+                        className='conditions__subtitle'>
                         Начинайте бизнес с высоты!
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
-                <div className="condition__section section_2">
-                <video 
+                <motion.div 
+                    initial='initial'
+                    whileInView='visible'
+                    className="condition__section section_2">
+                <motion.video
+                    custom={3}
+                    variants={photosVars}
                     src={video} 
                     autoPlay 
                     loop 
                     muted 
                     className='condition__video'
                     />
-                <div className="conditions__inscription">
+                <motion.div
+                    initial='initial'
+                    whileInView='visible' 
+                    custom={6}
+                    variants={photosVars}
+                    className="conditions__inscription sect_2">
                 Мы предлагаем продуманный и интуитивно 
                 понятный сервис, который позволит вам 
                 быстро и эффективно находить необходимые варианты. 
-                </div>
+                </motion.div>
 
-                </div>
+                </motion.div>
 
                 <div className="condition__section section_3">
 
-                <div className="conditions__inscription">
+                <motion.div
+                    initial='initial'
+                    whileInView='visible'
+                    custom={8}
+                    variants={photosVars}
+                    className="conditions__inscription sect_4">
                 Нужен офис для новой команды, современный 
                 коворкинг в центре города или 
                 просторное здание для бизнеса?
-                </div>
+                </motion.div>
                 
-                <div className="conditions__inscription sect_3">
+                <motion.div
+                    initial='initial'
+                    whileInView='visible'
+                    variants={ScaleVars}
+                    className="conditions__inscription sect_3">
                 С нами это пара кликов!
-                </div>
+                </motion.div>
                 </div>
 
-                </div>
+                </motion.div>
 
                 </div>
             </div>

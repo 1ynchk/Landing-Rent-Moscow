@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion'
 
 import skyscraper from '../static/img/skyscraper.jpg'
 import arrow from '../static/img/arrow.png'
+
+import { 
+    inscriptionsVars, 
+    ScaleBG,
+    widthUL } from './../static/motion/welcome';
 
 const About = () => {
     return (
@@ -12,8 +18,14 @@ const About = () => {
 
                     <div className='about__advantages'>
 
-                        <div className="about__section">
-                            <div className='about__subsection'>
+                        <motion.div
+                            whileInView='visible'
+                            initial='initial'
+                            className="about__section">
+                            <motion.div 
+                                variants={inscriptionsVars}
+                                custom={1}
+                                className='about__subsection'>
                                 <div className='about__header'>
                                     10 лет
                                 </div>
@@ -28,12 +40,22 @@ const About = () => {
                                         реализуем любые нестандартные решения
                                     </div>
                                 </div>
-                            </div>
-                            <div className='about__underline'></div>
-                        </div>
+                            </motion.div>
+                                
+                                
+                            <motion.div 
+                                variants={widthUL}
+                                className='about__underline'></motion.div>
+                        </motion.div>
 
-                        <div className="about__section">
-                            <div className='about__subsection'>
+                        <motion.div 
+                            whileInView='visible'
+                            initial='initial'
+                            className="about__section">
+                            <motion.div 
+                                variants={inscriptionsVars}
+                                custom={2}
+                                className='about__subsection'>
                                 <div className='about__header'>
                                     на 20%
                                 </div>
@@ -48,12 +70,22 @@ const About = () => {
                                         наши цены ниже рыночной цены
                                     </div>
                                 </div>
-                            </div>
-                            <div className='about__underline'></div>
-                        </div>
+                            </motion.div>
+                                
+                                
+                            <motion.div 
+                                variants={widthUL}
+                                className='about__underline'></motion.div>
+                        </motion.div>
 
-                        <div className="about__section">
-                            <div className='about__subsection'>
+                        <motion.div 
+                            whileInView='visible'
+                            initial='initial'
+                            className="about__section">
+                            <motion.div 
+                                variants={inscriptionsVars}
+                                custom={3}
+                                className='about__subsection'>
                                 <div className='about__header'>
                                     &gt; 1000 
                                 </div>
@@ -68,12 +100,22 @@ const About = () => {
                                         довольных клиентов пользуются нашими услугами
                                     </div>
                                 </div>
-                            </div>
-                            <div className='about__underline'></div>
-                        </div>
+                            </motion.div>
+                                
+                                
+                            <motion.div 
+                                variants={widthUL}
+                                className='about__underline'></motion.div>
+                        </motion.div>
 
-                        <div className="about__section">
-                            <div className='about__subsection'>
+                        <motion.div 
+                            whileInView='visible'
+                            initial='initial'
+                            className="about__section">
+                            <motion.div 
+                                variants={inscriptionsVars}
+                                custom={4}
+                                className='about__subsection'>
                                 <div className='about__header'>
                                     100%
                                 </div>
@@ -88,23 +130,39 @@ const About = () => {
                                         качество и соблюдение договоренности по проекту
                                     </div>
                                 </div>
-                            </div>
-                            <div className='about__underline'></div>
-                        </div>
+                            </motion.div>
+                                
+                                
+                            <motion.div 
+                                variants={widthUL}
+                                className='about__underline'></motion.div>
+                        </motion.div>
 
                     </div>
 
 
-                    <div className='about__photo_container'>
-                        <img 
+                    <motion.div 
+                        initial='initial'
+                        whileInView='visible'
+                        variants={inscriptionsVars}
+
+                        className='about__photo_container'>
+                        <img
+                            
                             src={skyscraper} 
                             alt='skycraper'
                             className='about__skycraper'
                             />
-                        <div className='about__vector vector_1'></div>
+                        <motion.div 
+                            custom={2}
+                            variants={ScaleBG} 
+                            className='about__vector vector_1'></motion.div>
 
-                        <div className='about__vector vector_2'></div>
-                    </div>
+                        <motion.div 
+                            custom={4}
+                            className='about__vector vector_2'
+                            variants={ScaleBG}></motion.div>
+                    </motion.div>
                     
 
                 </div>

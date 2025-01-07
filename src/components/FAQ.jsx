@@ -1,5 +1,5 @@
 
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 
 import cross from '../static/img/cross.png'
 

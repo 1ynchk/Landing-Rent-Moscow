@@ -67,7 +67,6 @@
 }
 
 .about__underline {
-    position: absolute;
     width: 50vw;
     background-color: rgb(95, 30, 95);
     height: 0.05vw;
@@ -95,4 +94,87 @@
     top: -2vw;
     right: -2vw;
     z-index: -2;
+}
+
+@media (max-width: 764px) {
+
+    .about {
+        margin-top: 5vw;
+    }
+    
+    .about__container {
+        flex-direction: column;
+        margin: 5vw 0;
+    }
+    .about__underline {
+        width: 100%;
+    }
+
+    .about__advantages {
+        order: 2;
+        height: fit-content;
+    }
+    .about__photo_container {
+        order: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__skycraper {
+        width: 60vw;
+    }
+
+    .about__vector {
+        width: 60vw;
+        height: 84vw;
+    }
+
+    .about__vector.vector_1 {
+        right: 15vw;
+        top: -2vw;
+    }
+
+    .about__section {
+        height: fit-content;
+    }
+
+    .about__vector.vector_2 {
+        right: 15vw;
+        top: -4vw;
+        height: 88vw;
+    }
+
+    .about__advantages {
+        margin-top: 7vw;
+    }
+
+    .about__header {
+        font-size: 8vw;
+    }
+
+    .about__advantages_title {
+        font-size: 4vw;
+    }
+
+    .about__subsection {
+        min-height: 20vw;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .about__box {
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        width: 40vw;
+    }
+
+    .about__arrow {
+        margin-right: 2vw;
+        width: 5vw;
+    }
+
+    .about__underline {
+        position: relative;
+    }
 }
