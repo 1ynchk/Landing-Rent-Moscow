@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import cross from '../static/img/cross.png'
 
-import { widthUL, inscriptionsVars, ScaleVars } from '../static/motion/welcome'
+import { widthUL, inscriptionsVars } from '../static/motion/welcome'
 
 const Question = ({id, qu, ans}) => {
 

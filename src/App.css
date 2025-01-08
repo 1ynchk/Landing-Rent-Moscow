@@ -19,6 +19,11 @@ img{vertical-align: top;}
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
 }
 
 body {
@@ -39,3 +44,4 @@ body {
 .App {
     height: 100%;
 }
+

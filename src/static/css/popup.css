@@ -1,0 +1,387 @@
+
+.popup {
+    color: black;
+}
+
+.popup__overlay {
+    cursor: pointer;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.349);
+}
+
+.popup__container {
+    cursor: default;
+
+    z-index: 9;
+    background-color: white;
+    width: 70vw;
+    height: 50vw;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 2vw;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__galery {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.popup__photo_container {
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45vw;
+    overflow: hidden;
+}
+
+.popup__photo {
+    border-radius: 1vw;
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.popup-prev,
+.popup-next,
+.popup__cross {
+    z-index: 7;
+    top: 24vw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1vw 1vw;
+    width: fit-content;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s ease;
+    font-size: 3vw;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-prev {
+    left: -1vw;
+}
+
+.popup-next {
+    right: -1vw;
+}
+
+.popup__cross {
+    top: 0.2vw;
+    right: 0.2vw;
+    width: 3vw;
+}
+
+.popup-prev:hover,
+.popup-next:hover,
+.popup__cross:hover {
+    transform: scale(1.1);
+}
+
+/* proposal */
+
+.proposal {
+    padding: 3vw 0;
+    width: 80%;
+    height: 100%;
+}
+
+.proposal__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.proposal__section {
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.proposal__subtitle {
+    font-size: 1.5vw;
+}
+
+.proposal__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.proposal__input {
+    width: 100%;
+    font-size: 1.3vw;
+    border-bottom: 0.05vw solid black;
+    padding-bottom: 0.5vw;
+}
+
+.popup__container.pproposal {
+    width: 35vw;
+}
+
+.proposal__title {
+    font-size: 3vw;
+}
+
+.proposal__button {
+    height: 5vw;
+    font-size: 2vw;
+    width: 100%;
+    color: white;
+    background-color: rgb(95, 30, 95);
+    border-radius: 1vw;
+}
+
+.proposal__claim {
+    position: absolute;
+    top: 7vw;
+    right: 4vw;
+    font-size: 2vw;
+    font-style: italic;
+    color: rgb(95, 30, 95);
+}
+
+@media (max-width: 764px) {
+
+    .proposal__section {
+        height: 7vw;
+    }
+
+    .proposal__input {
+        font-size: 2.35vw;
+    }
+
+    .proposal__subtitle {
+        font-size: 3vw;
+    }
+
+    .proposal__button {
+        font-size: 4vw;
+        height: 7vw;
+    }
+
+    .proposal__title {
+        font-size: 5vw;
+    }
+
+    .proposal__claim {
+        top: 10vw;
+        font-size: 3vw;
+    }
+
+    .popup__container.pproposal {
+        width: 55vw;
+        height: 70vw;
+    }
+
+    .popup__cross.pproposal {
+        top: 0.2vw;
+        left: 90%;
+        width: 5vw;
+    }
+    
+    .popup__container {
+        top: 65%;
+    }
+    
+    .popup__photo_container {
+        height: 90vw;
+    }
+
+    .popup__container {
+        width: 95vw;
+        height: 120vw;
+    }
+    .popup-prev,
+    .popup-next {
+        display: flex;
+        justify-content: center;
+        width: 20vw;
+        top: 107vw;
+        font-size: 8vw;
+    }
+    .popup-prev {
+        left: 10vw;
+    }
+    
+    .popup-next {
+        right: 10vw;
+    }
+
+    .popup__cross {
+        width: 8vw;
+        top: 2vw;
+        left: 90%;
+    }
+}
+
+
+
+@media (max-width: 464px) {
+    .proposal__section {
+        height: 12vw;
+    }
+
+    .proposal__input {
+        font-size: 4.35vw;
+    }
+
+    .proposal__subtitle {
+        font-size: 5vw;
+    }
+
+    .proposal__button {
+        font-size: 6vw;
+        height: 9vw;
+    }
+
+    .proposal__title {
+        font-size: 7vw;
+    }
+
+    .proposal__claim {
+        top: 14vw;
+        font-size: 5vw;
+    }
+
+    .popup__container.pproposal {
+        width: 80vw;
+        height: 110vw;
+    }
+
+    .popup__cross.pproposal {
+        top: 0.2vw;
+        left: 91%;
+        width: 7vw;
+    }
+}
+
+@media (max-height: 464px) {
+
+    .popup__container {
+        top: 50%;
+    }
+    
+    .popup__photo_container {
+        height: 42vw;
+    }
+
+    .popup__container {
+        width: 90vw;
+        height: max-content;
+    }
+    .popup-prev,
+    .popup-next {
+        display: flex;
+        justify-content: center;
+        width: 20vw;
+        top: 54vw;
+        font-size: 8vw;
+    }
+    .popup-prev {
+        left: 10vw;
+    }
+    
+    .popup-next {
+        right: 10vw;
+    }
+
+    .popup__cross {
+        top: 54vw;
+    }
+
+}
+
+@media (max-height: 464px) and (max-width: 940px) {
+
+    .popup__container {
+        top: 50%;
+    }
+    
+    .popup__photo_container {
+        height: 42vw;
+    }
+
+    .popup__container {
+        width: 80vw;
+        height: 45vw;
+    }
+    .popup-prev,
+    .popup-next {
+        display: flex;
+        justify-content: center;
+        width: 10vw;
+        top: 20vw;
+        font-size: 6vw;
+    }
+    .popup-prev {
+        left: -3vw;
+    }
+    
+    .popup-next {
+        right: -3vw;
+    }
+
+    .popup__cross {
+        top: -1vw;
+        right: -1vw;
+        width: 5vw;
+    }
+
+    .proposal__section {
+        height: 5vw;
+    }
+
+    .proposal__input {
+        font-size: 1.35vw;
+    }
+
+    .proposal__subtitle {
+        font-size: 2vw;
+    }
+
+    .proposal__button {
+        font-size: 2vw;
+        height: 5vw;
+    }
+
+    .proposal__title {
+        font-size: 3vw;
+    }
+
+    .proposal__claim {
+        top: 8vw;
+        font-size: 2.5vw;
+    }
+
+    .popup__container.pproposal {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .popup__cross.pproposal {
+        top: 0.2vw;
+        left: 91%;
+        width: 4vw;
+    }
+
+}

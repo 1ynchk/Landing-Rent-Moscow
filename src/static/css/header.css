@@ -52,6 +52,19 @@
     width: 100%;
 }
 
+.header__nav_wrapper.proposall {
+    height: auto;
+    border-radius: 1vw;
+    background-color: white;
+    color: black;
+    padding: 0.5vw 1vw;
+    transition: .3s ease;
+}
+
+.header__nav_wrapper.proposall:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width: 764px) {
     .header__section.nav {
         display: none;

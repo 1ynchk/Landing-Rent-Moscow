@@ -52,7 +52,8 @@ const About = ({data}) => {
 
                         {
                             data.map(el => {
-                                return <AboutSubComp 
+                                return <AboutSubComp
+                                    key={el.index}
                                     header={el.header}
                                     title={el.title}
                                     index={el.index}

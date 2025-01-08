@@ -8,7 +8,12 @@ import arrow_down from '../static/img/arrow_down.png'
 
 import { photosVars, inscriptionsVars } from './../static/motion/welcome';
 
+import { activateReducer } from '../store/popupSlice';
+import { useDispatch } from 'react-redux';
+
 const Welcome = () => {
+
+    const dispatch = useDispatch()
 
     return (
         <div className="welcome">
@@ -50,6 +55,7 @@ const Welcome = () => {
                         <motion.button
                             custom={3}
                             variants={inscriptionsVars}
+                            onClick={() => dispatch(activateReducer('pproposal'))}
                             className='welcome__btn'>
                             ПОДОБРАТЬ ОФИС
                         </motion.button>

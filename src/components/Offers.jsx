@@ -24,7 +24,7 @@ const Offer = ({subtitle, inscription, image, index}) => {
 const Offers = ({data}) => {
 
     return (
-        <div className="offers">
+        <div id='offers' className="offers">
 
             <div className="container">
 
@@ -46,6 +46,7 @@ const Offers = ({data}) => {
                     {
                         data.map(el => {
                             return <Offer 
+                            key={el.index}
                             subtitle={el.subtitle}
                             inscription={el.inscription}
                             image={el.image}

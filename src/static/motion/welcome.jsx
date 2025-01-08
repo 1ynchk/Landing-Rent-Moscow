@@ -1,3 +1,4 @@
+
 export const photosVars = {
     initial: {
         opacity: 0,

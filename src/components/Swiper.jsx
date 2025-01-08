@@ -4,7 +4,12 @@ import 'swiper/css'
 import 'swiper/swiper-bundle.css';
 import { Autoplay, Navigation } from "swiper/modules";
 
+import { activateReducer } from '../store/popupSlice';
+import { useDispatch } from 'react-redux';
+
 const Galery = ({data}) => {
+
+    const dispatch = useDispatch()
 
     return (
         <div className='galery'>
@@ -34,7 +39,11 @@ const Galery = ({data}) => {
                     data.map(el => {
                         return (
                             <SwiperSlide
+                                key={el.index}
                                 className='galery__slide'
+                                onClick={() => 
+                                    dispatch(activateReducer('gallery')
+                                )}
                                 >
                                 <div className='galery__photo_container'>
                                     <img 
@@ -49,8 +58,8 @@ const Galery = ({data}) => {
 
             </Swiper>
 
-            <div className="custom-prev">&lt;-</div>
-            <div className="custom-next">-&gt;</div>
+            <div className="custom-prev">&lt;</div>
+            <div className="custom-next">&gt;</div>
 
         </div>
     )

@@ -5,7 +5,7 @@ const Maps = () => {
     
 
     return (
-        <div className='maps'>
+        <div id='maps' className='maps'>
 
             <div className='container'>
                 <div className='aps__title'>Мы на карте</div>

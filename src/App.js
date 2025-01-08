@@ -8,6 +8,7 @@ import './static/css/offers.css'
 import './static/css/faq.css'
 import './static/css/maps.css'
 import './static/css/footer.css'
+import './static/css/popup.css'
 
 import Popup from './components/Popup.jsx';
 
@@ -23,22 +24,25 @@ import Footer from './components/Footer.jsx';
 
 import { dataOffers, dataAbout, dataGalery } from './data/data';
 
+
 function App() {
   return (
-    <div className="App">
-      <Popup />
-      
-      <Header/>
-      <Welcome/>
-      <Conditions />
-      <Offers data={dataOffers}/>
-      <About data={dataAbout}/>
-      <Galery data={dataGalery}/>
-      
-      <FAQ />
-      {/* <Maps/> */}
-      <Footer />
-    </div>
+
+      <div className="App">
+        <Popup data={dataGalery} />
+
+        <Header/>
+        <Welcome/>
+        <Conditions />
+        <Offers data={dataOffers}/>
+        <About data={dataAbout}/>
+        <Galery data={dataGalery}/>
+        
+        <FAQ />
+        <Maps/>
+        <Footer />
+      </div>
+    
   );
 }
 
