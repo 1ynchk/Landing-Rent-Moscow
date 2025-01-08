@@ -3,7 +3,7 @@ import { ScaleBG } from '../static/motion/welcome';
 
 import { useDispatch, useSelector } from "react-redux"
 
-import { activateReducer } from "../store/popupSlice"
+import { activateReducer } from "../store/PopupSlice"
 import cross from '../static/img/cross.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'

@@ -4,7 +4,7 @@ import 'swiper/css'
 import 'swiper/swiper-bundle.css';
 import { Autoplay, Navigation } from "swiper/modules";
 
-import { activateReducer } from '../store/popupSlice';
+import { activateReducer } from '../store/PopupSlice';
 import { useDispatch } from 'react-redux';
 
 const Galery = ({data}) => {

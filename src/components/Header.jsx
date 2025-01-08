@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux'
 import logo from '../static/img/logo.png'
 
-import { activateReducer } from '../store/popupSlice';
+import { activateReducer } from '../store/PopupSlice';
 
 const Header = () => {
 

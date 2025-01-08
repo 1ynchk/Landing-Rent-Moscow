@@ -8,7 +8,7 @@ import arrow_down from '../static/img/arrow_down.png'
 
 import { photosVars, inscriptionsVars } from './../static/motion/welcome';
 
-import { activateReducer } from '../store/popupSlice';
+import { activateReducer } from '../store/PopupSlice';
 import { useDispatch } from 'react-redux';
 
 const Welcome = () => {
