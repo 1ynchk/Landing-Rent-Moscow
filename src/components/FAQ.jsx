@@ -1,7 +1,9 @@
-
+import { motion } from 'motion/react'
 import { useState } from 'react'
 
 import cross from '../static/img/cross.png'
+
+import { widthUL, inscriptionsVars, ScaleVars } from '../static/motion/welcome'
 
 const Question = ({id, qu, ans}) => {
 
@@ -28,10 +30,15 @@ const Question = ({id, qu, ans}) => {
 
         <div id={'faq__section_' + id} className='faq__section'>
             <div className='faq__wrapper'>
-                <div className="faq__question_value">
+                <motion.div 
+                    whileInView='visible'
+                    initial='initial'
+                    variants={inscriptionsVars}
+                    className="faq__question_value">
                     {qu}
-                </div>
-                        <img 
+                </motion.div>
+                        <img
+                            
                             id={'faq__cross_' + id}
                             onClick={() => openQuestion()}
                             className="faq__question_cross" 
@@ -41,7 +48,11 @@ const Question = ({id, qu, ans}) => {
             <div id={'faq__answer_' + id} className='faq__answer'>
                 {ans}
             </div>
-            <div className='faq__underline'></div>
+            <motion.div 
+                whileInView='visible'
+                initial='initial'
+                variants={widthUL}
+                className='faq__underline'></motion.div>
         </div>
 
     )

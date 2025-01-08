@@ -82,6 +82,10 @@
     .faq__title {
         font-size: 5vw;
     }
+
+    .faq__container {
+        padding-bottom: 3vw;
+    }
 }
 
 @media (max-width: 464px) {

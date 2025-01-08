@@ -70,7 +70,6 @@
     .galery {
         position: relative;
         height: 55vw;
-
     }
     .galery__swiper {
         position: absolute;
@@ -78,7 +77,7 @@
     }
 
     .galery__title {
-        font-size: 10vw;
+        font-size: 5vw;
     }
     .galery__swiper {
         margin-top: 0;
@@ -92,7 +91,7 @@
     }
     .custom-prev,
     .custom-next {
-        top: 4vw;
+        top: 2vw;
         font-size: 6vw;
     }
     .custom-prev {
@@ -108,7 +107,7 @@
     }
 
     .galery__title {
-        font-size: 10vw;
+        font-size: 7vw;
     }
     .galery__swiper {
         margin-top: 0;

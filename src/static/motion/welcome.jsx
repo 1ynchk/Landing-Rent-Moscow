@@ -56,7 +56,7 @@ export const widthUL = {
     },
     visible: {
         opacity: 1,
-        width: '50vw',
+        width: '100%',
         transition: {
             delay: 0.3
         }

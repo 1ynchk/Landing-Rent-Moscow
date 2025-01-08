@@ -1,0 +1,16 @@
+.maps {
+    padding: 2vw 0;
+    color: black;
+}
+
+.aps__title {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+}
+
+@media (max-width: 764px) {
+    .aps__title {
+        font-size: 7vw;
+        margin-bottom: 3vw;
+    }
+}
